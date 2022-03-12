@@ -1,0 +1,69 @@
+\documentclass{article}
+
+% Packages for equations, fonts, and colors.
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{xcolor}
+
+% Packages and Commands for list head.
+\usepackage{enumitem}
+\renewcommand*{\thesection}{\Roman{section}}
+\renewcommand*{\thesubsection}{\thesection.(\alph{subsection})}
+
+% Packages and Commands for size.
+\usepackage{geometry}
+\geometry{
+a4paper,
+left=20mm,
+right=20mm,
+top=20mm,
+bottom=20mm
+}
+% Packages and Commands to set up paragraph indentation.
+\usepackage{lipsum}
+\usepackage{setspace}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1.2em}
+
+% Packages and Commands to set up citation, links, etc.
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+citecolor=blue,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue
+}
+
+% Packages and commands for title spacing.
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0cm}{0.1cm}{0.1cm}
+\titlespacing*{\subsection}
+{0.25cm}{0.1cm}{0.1cm}
+
+% Commands to set up reference template.
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% ------------------------------------------------------------
+
+\title{Project Report}
+\author{Team 3\footnote{Contact: \{shiwechen6-c,\}@my.cityu.edu.hk}  \:- CHEN Shiwei, GAO Letao, WANG Shixiang}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    In this project, we conducted a restrospective data mining on the global covid-19 situation using public dataset
+\end{abstract}
+
+\section{Introduction}
+\section{Conclusion}
+
+\begin{thebibliography}{00}
+    \bibitem{ref1} Ensheng Dong, Hongru Du, Lauren Gardner. 2020. ``An interactive web-based dashboard to track COVID-19 in real time". The Lancet Infectious Diseases Correpsondence, volume 20, issue 5, p533-534. DOI:\href{https://doi.org/10.1016/S1473-3099(20)30120-1}{10.1016/S1473-3099(20)30120-1}.
+\end{thebibliography}
+
+
+\end{document}
