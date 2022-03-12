@@ -1,5 +1,8 @@
-# LaTeX auxilliary files
+# LaTeX
 *.aux
 *.log
 *.out
 *.synctex.gz
+
+# Jupyter notebook
+*.ipynb_checkpoints
